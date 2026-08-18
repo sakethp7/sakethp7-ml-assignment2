@@ -4,7 +4,7 @@ Machine Learning Assignment 2, BITS Pilani WILP M.Tech (AIML/DSE).
 Five classification models trained on the UCI Bank Marketing dataset, with a
 Streamlit app to evaluate them on test data.
 
-- Live app: will be added after deployment
+- Live app: https://sakethp7-ml-assignment.streamlit.app/
 - GitHub repository: https://github.com/sakethp7/sakethp7-ml-assignment2
 
 ## a. Problem Statement
