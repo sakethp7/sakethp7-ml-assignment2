@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+
+
+# Local data cache 
+bank-additional-full.csv
+bank-full.csv
+bank.csv
+bank*.zip
+assignment2_artifacts.zip

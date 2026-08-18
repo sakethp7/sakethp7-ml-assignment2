@@ -1,0 +1,264 @@
+{
+  "dataset_name": "Bank Marketing (UCI ML Repository, id=222)",
+  "dataset_url": "https://archive.ics.uci.edu/dataset/222/bank+marketing",
+  "task": "Binary classification -- term deposit subscription",
+  "n_rows_total": 41176,
+  "n_features": 20,
+  "target_column": "y",
+  "positive_label": "yes",
+  "class_balance": {
+    "no": 36537,
+    "yes": 4639
+  },
+  "feature_columns": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "housing",
+    "loan",
+    "contact",
+    "month",
+    "day_of_week",
+    "campaign",
+    "pdays",
+    "previous",
+    "poutcome",
+    "emp_var_rate",
+    "cons_price_idx",
+    "cons_conf_idx",
+    "euribor3m",
+    "nr_employed",
+    "was_contacted_before"
+  ],
+  "numeric_columns": [
+    "age",
+    "campaign",
+    "pdays",
+    "previous",
+    "emp_var_rate",
+    "cons_price_idx",
+    "cons_conf_idx",
+    "euribor3m",
+    "nr_employed",
+    "was_contacted_before"
+  ],
+  "categorical_columns": [
+    "job",
+    "marital",
+    "education",
+    "default",
+    "housing",
+    "loan",
+    "contact",
+    "month",
+    "day_of_week",
+    "poutcome"
+  ],
+  "categorical_levels": {
+    "job": [
+      "admin.",
+      "blue-collar",
+      "entrepreneur",
+      "housemaid",
+      "management",
+      "retired",
+      "self-employed",
+      "services",
+      "student",
+      "technician",
+      "unemployed",
+      "unknown"
+    ],
+    "marital": [
+      "divorced",
+      "married",
+      "single",
+      "unknown"
+    ],
+    "education": [
+      "basic.4y",
+      "basic.6y",
+      "basic.9y",
+      "high.school",
+      "illiterate",
+      "professional.course",
+      "university.degree",
+      "unknown"
+    ],
+    "default": [
+      "no",
+      "unknown",
+      "yes"
+    ],
+    "housing": [
+      "no",
+      "unknown",
+      "yes"
+    ],
+    "loan": [
+      "no",
+      "unknown",
+      "yes"
+    ],
+    "contact": [
+      "cellular",
+      "telephone"
+    ],
+    "month": [
+      "apr",
+      "aug",
+      "dec",
+      "jul",
+      "jun",
+      "mar",
+      "may",
+      "nov",
+      "oct",
+      "sep"
+    ],
+    "day_of_week": [
+      "fri",
+      "mon",
+      "thu",
+      "tue",
+      "wed"
+    ],
+    "poutcome": [
+      "failure",
+      "nonexistent",
+      "success"
+    ]
+  },
+  "numeric_summary": {
+    "age": {
+      "min": 17.0,
+      "max": 98.0,
+      "median": 38.0
+    },
+    "campaign": {
+      "min": 1.0,
+      "max": 56.0,
+      "median": 2.0
+    },
+    "pdays": {
+      "min": 0.0,
+      "max": 27.0,
+      "median": 0.0
+    },
+    "previous": {
+      "min": 0.0,
+      "max": 7.0,
+      "median": 0.0
+    },
+    "emp_var_rate": {
+      "min": -3.4,
+      "max": 1.4,
+      "median": 1.1
+    },
+    "cons_price_idx": {
+      "min": 92.201,
+      "max": 94.767,
+      "median": 93.749
+    },
+    "cons_conf_idx": {
+      "min": -50.8,
+      "max": -26.9,
+      "median": -41.8
+    },
+    "euribor3m": {
+      "min": 0.634,
+      "max": 5.045,
+      "median": 4.857
+    },
+    "nr_employed": {
+      "min": 4963.6,
+      "max": 5228.1,
+      "median": 5191.0
+    },
+    "was_contacted_before": {
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    }
+  },
+  "dropped_columns": [
+    "duration"
+  ],
+  "test_size": 0.2,
+  "random_state": 42,
+  "model_files": {
+    "Logistic Regression": "logistic_regression.joblib",
+    "Decision Tree": "decision_tree.joblib",
+    "kNN": "knn.joblib",
+    "Naive Bayes": "naive_bayes.joblib",
+    "Random Forest (Ensemble)": "random_forest.joblib"
+  },
+  "model_order": [
+    "Logistic Regression",
+    "Decision Tree",
+    "kNN",
+    "Naive Bayes",
+    "Random Forest (Ensemble)"
+  ],
+  "metrics": {
+    "Logistic Regression": {
+      "Accuracy": 0.830378824672171,
+      "AUC": 0.8001371754855331,
+      "Precision": 0.3593281343731254,
+      "Recall": 0.6454741379310345,
+      "F1": 0.4616570327552986,
+      "MCC": 0.3929579036017929,
+      "FitSeconds": 0.51,
+      "PredictSeconds": 0.06
+    },
+    "Decision Tree": {
+      "Accuracy": 0.8229723166585721,
+      "AUC": 0.7990028936168206,
+      "Precision": 0.34994337485843713,
+      "Recall": 0.665948275862069,
+      "F1": 0.45879732739420936,
+      "MCC": 0.392034431577805,
+      "FitSeconds": 0.37,
+      "PredictSeconds": 0.07
+    },
+    "kNN": {
+      "Accuracy": 0.8969159786304031,
+      "AUC": 0.7632815301606175,
+      "Precision": 0.5961070559610706,
+      "Recall": 0.2640086206896552,
+      "F1": 0.3659447348767737,
+      "MCC": 0.35039372018972464,
+      "FitSeconds": 0.23,
+      "PredictSeconds": 2.84
+    },
+    "Naive Bayes": {
+      "Accuracy": 0.8329286061194755,
+      "AUC": 0.7760774240086443,
+      "Precision": 0.3476190476190476,
+      "Recall": 0.5506465517241379,
+      "F1": 0.4261884904086739,
+      "MCC": 0.34633648505422815,
+      "FitSeconds": 0.24,
+      "PredictSeconds": 0.08
+    },
+    "Random Forest (Ensemble)": {
+      "Accuracy": 0.8722680913064594,
+      "AUC": 0.8115432514910443,
+      "Precision": 0.45193798449612405,
+      "Recall": 0.6282327586206896,
+      "F1": 0.5256988277727682,
+      "MCC": 0.46238706044777667,
+      "FitSeconds": 3.21,
+      "PredictSeconds": 0.31
+    }
+  },
+  "library_versions": {
+    "python": "3.11.1",
+    "scikit-learn": "1.6.1",
+    "pandas": "3.0.5",
+    "numpy": "2.4.6",
+    "joblib": "1.5.3"
+  }
+}
